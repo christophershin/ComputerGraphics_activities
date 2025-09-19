@@ -3,6 +3,8 @@ Shader "Chris/Chris"
     Properties
     {
         _myColor("Sample Color", Color) = (1,1,1,1)
+
+        
     }
 
     SubShader
@@ -24,6 +26,10 @@ Shader "Chris/Chris"
             {
                 float4 positionOS : POSITION;
             };
+
+            
+            half4 customColor;
+
 
             struct Varyings
             {
